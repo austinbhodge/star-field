@@ -1,0 +1,172 @@
+
+
+
+.game-container{
+  height: 100%;
+  min-width: 100%;
+  background-color: black !important;
+  z-index:-2;
+}
+
+
+h1{
+  margin: 5px;
+  text-align: center;
+  padding-top: 15vh;
+  padding-bottom: -10px;
+  font-size: 12.6vmin;
+  text-shadow: 5px 5px 0px rgb(36, 36, 36);
+  text-rendering: geometricPrecision;
+  color:rgb(0, 194, 255);
+  font-family: 'Iceland', cursive;
+}
+
+h2{
+  text-align: center;
+  margin-top:-7vmin;
+  padding-top: 0px;
+  margin-bottom: 2vh;
+  font-size: 11vmin;
+  text-shadow: 3px 3px 0px rgb(36, 36, 36);
+  text-rendering: geometricPrecision;
+  color:rgb(0, 194, 255);
+  font-family: 'Iceland', cursive;
+
+
+}
+
+.menuho {
+  border-color:rgb(0, 194, 255);
+  width: 40vmax;
+  align-self: center;
+  margin: 0 auto;
+  padding-bottom: 5vmin;
+}
+
+
+a {
+  padding: 0px;
+  text-align: center;
+  padding-top: 4px;
+  font-size: 4vmin;
+  display: block;
+  transition: .7s;
+  text-shadow: 1px 0px 0px rgb(0, 194, 255);
+font-family: 'Electrolize', sans-serif;
+}
+
+a:hover{
+  text-shadow: 1px 1px 0px rgb(170, 103, 255);
+  color: white;
+  transition: 1s;
+}
+
+h4 {
+  padding: 0px;
+  text-align: center;
+  padding-top: 4px;
+  font-size: 4vmin;
+  transition: .7s;
+  color: rgb(13, 163, 218);
+  text-shadow: 1px 0px 0px rgb(0, 194, 255);
+  font-family: 'Electrolize', sans-serif;
+}
+
+
+
+
+.container{
+  height: 100%;
+}
+
+.row{
+    max-width: 100%;
+}
+
+
+#stars{
+  z-index: 0;
+  position: fixed;
+  border-color: black;
+  margin: 0px;
+  width:100vw;
+  height:100vh;
+}
+
+#enterprise{
+  position: fixed;
+  z-index: 0;
+  left:-50vmin;
+  bottom:-45vmin;
+  width: 145vmin;
+  -webkit-animation-name: flying;
+  -webkit-animation-duration:5.5s;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+}
+
+#HUD{
+  position: fixed;
+  bottom: 0;
+  height: 34vmin;
+  width: 100%;
+  background-color: #111111;
+  border-radius: 5%;
+}
+
+#miniMap{
+  position: fixed;
+  bottom: 2vmin;
+  left: 2vmin;
+  height: 30vmin;
+  width: 28vmin;
+  background-color: black;
+  z-index: 3;
+  border-radius: 100%;
+}
+
+#energyDisplay{
+    position: fixed;
+    bottom: 2vmin;
+    left: 36vmin;
+    height: 30vmin;
+    width: 28vmin;
+    background-color: transparent;
+    z-index: 3;
+}
+
+#sliderCol{
+  position: fixed;
+  width: 22vmin;
+}
+
+#energyDisplay .range-slider-active-segment{
+  background-color: rgb(34, 251, 225);
+  border-color: black;
+  border: solid;
+  border-width: 1px;
+  border-radius: 20%;
+}
+
+#energyDisplay .range-slider{
+  background-color: rgba(198, 255, 248,0.4);
+  border-color: black;
+  border: solid;
+  border-width: 1px;
+  border-radius: 20%;
+}
+
+#energyDisplay .range-slider-handle{
+  background-color: rgb(61, 91, 96);
+  border-color: black;
+  border: solid;
+  border-width: 1px;
+  border-radius: 30%;
+  width: 13px;
+}
+
+@-webkit-keyframes flying {
+  from {left:-50vmin;padding-bottom:0px;}
+  to {left:-30vmin;padding-bottom:50px;}
+}
